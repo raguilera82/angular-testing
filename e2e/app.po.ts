@@ -5,7 +5,19 @@ export class AngularTestingPage {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  setUsername(username: string) {
+    element(by.id('username')).sendKeys(username);
+  }
+
+  clickSearchButton() {
+    element(by.id('search')).click();
+  }
+
+  getLoginText() {
+    return element(by.css('#login')).getText();
+  }
+
+  getErrorText() {
+    return element(by.css('#error')).getText();
   }
 }

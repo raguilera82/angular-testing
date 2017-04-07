@@ -7,9 +7,9 @@
 
 <div *ngIf="user">
   <p id="login">Login: {{user.login}}</p>
-  <p id="id">ID: {{user.id}}</p>
   <p id="name">Name: {{user.name}}</p>
-  <img src="{{user.avatar_url}}" alt="avatar" width="200">
+  <p id="admin">Admin: {{user.admin}}</p>
+  <img src="{{user.avatar}}" alt="avatar" width="200">
 </div>
 
-<div id="error" *ngIf="error">{{error}}</div>
+<p id="error" *ngIf="error">{{error}}</p>

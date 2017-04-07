@@ -1,3 +1,19 @@
-## In this example you can view the bad way, all logic is implemented by one component. This is really hard for testing because you have two strong dependencies: DOM (Component) and HTTP (connect remote server).
+## In this example you can view better way, the solution has three layers: proxy (connect to remote server), adapter (match response with domain model) and view (of course Component). This is easy for testing because much logic is in the domain.
 
-## We need to refactor the solution and add some tests. See the "with-tests-and-refactor" branch
+### To start fake server you have to execute. Listen in port 3000
+
+´´´
+$> npm run fake-server
+´´´
+
+### To run unit and integration tests with code coverage
+
+´´´
+$> npm run test -- --code-coverage
+´´´
+
+### To run e2e tests
+
+´´´
+$> npm run e2e
+´´´
