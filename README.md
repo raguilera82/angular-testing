@@ -2,18 +2,18 @@
 
 ### To start fake server you have to execute. Listen in port 3000
 
-´´´
+```
 $> npm run fake-server
-´´´
+```
 
 ### To run unit and integration tests with code coverage
 
-´´´
+```
 $> npm run test -- --code-coverage
-´´´
+```
 
 ### To run e2e tests
 
-´´´
+```
 $> npm run e2e
-´´´
+```
