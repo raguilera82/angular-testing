@@ -1,3 +1,15 @@
-<h1>
-  {{title}}
-</h1>
+<h1>Search User</h1>
+
+<form>
+  <label for="username">Username:</label> <input type="text" value="" #username id="username">
+  <button id="search" (click)="search(username.value)">Search</button>
+</form>
+
+<div *ngIf="user">
+  <p id="login">Login: {{user.login}}</p>
+  <p id="id">ID: {{user.id}}</p>
+  <p id="name">Name: {{user.name}}</p>
+  <img src="{{user.avatar_url}}" alt="avatar" width="200">
+</div>
+
+<div id="error" *ngIf="error">{{error}}</div>
